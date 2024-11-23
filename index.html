@@ -51,7 +51,7 @@
       const currentTimeDiv = document.getElementById('current-time');
       currentTimeDiv.textContent = 'Получаем текущее время...';
       try {
-        const url = 'https://www.worldtimeserver.com/current_time_in_RU-SPE.aspx?city=Saint_Petersburg';
+        const url = 'https://cors-anywhere.herokuapp.com/https://www.worldtimeserver.com/current_time_in_RU-SPE.aspx?city=Saint_Petersburg';
         const response = await fetch(url);
         const html = await response.text();
         const parser = new DOMParser();
